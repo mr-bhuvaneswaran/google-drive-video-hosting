@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Status</string>
+    <string name="enter_num">Enter phone number</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="verify">VERIFY</string>
+    <string name="verify_code">Enter verification code</string>
+    <string name="category">category</string>
+</resources>

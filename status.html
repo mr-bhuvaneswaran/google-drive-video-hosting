@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+   background: rgba(0,0,0,0) url("http://www.voki.com/images/ajax-loader.gif") center center no-repeat;
+   background-size: 100px 100px
+}
+
+video.focus{
+
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+// google script url	
+var script_url = "script url name";
+var url = script_url+"?action=read";
+$.getJSON(url, function (json) {
+        for (var i = 0; i < json.records.length ; i++) {
+        	var video = document.createElement('video');
+        	video.src = json.records[i].link;
+        	video.controls = true;
+        	video.preload = "none";
+        	// to get the thumbnail for video file
+     	    video.poster =  "https://drive.google.com/thumbnail?authuser=0&sz=w320&id="+ json.records[i].id;
+  			video.id = json.records[i].id;
+  			video.onmouseenter = function (event) {
+  				event.path[0].play();
+  			}
+  			video.onmouseleave = function (event) {
+  				event.path[0].pause();	
+  			}
+ 			document.body.insertBefore(video, document.body.firstChild);      	
+        }    
+ });
+
+  </script>
+</head>
+<body id="main">
+</body>
+</html>
