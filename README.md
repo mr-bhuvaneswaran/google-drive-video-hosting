@@ -56,7 +56,7 @@ Status folder
     Uses the webview to show the hosted website inside the android application.
     
 ### Demo images
-    ![alt text](https://github.com/mr-bhuvaneswaran/google-drive-video-hosting/blob/master/Screenshot_20180423-191241.png "login")
-    ![alt text](https://github.com/mr-bhuvaneswaran/google-drive-video-hosting/blob/master/IMG-20180423-WA0006.jpg "video host") 
+    <img src="https://github.com/mr-bhuvaneswaran/google-drive-video-hosting/blob/master/Screenshot_20180423-191241.png"/>
+    <img src="https://github.com/mr-bhuvaneswaran/google-drive-video-hosting/blob/master/IMG-20180423-WA0006.jpg"/> 
   
   
